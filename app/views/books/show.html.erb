@@ -1,1 +1,21 @@
-<h1>create book成功</h1>
+<div class="container">
+    <div class="row">
+        <%= render 'users/list', books: @books %>
+        <div class="col-md-8 offset-md-1">
+            <h2>Book detail</h2>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <%= attachment_image_tag @user, :profile_image, :fill, 40, 40, fallback: "no_image.jpg" %>
+                            <br>
+                            <%= link_to users.name user_path(user.id) %>
+                        </td>
+                        <td><%= link_to book.title, book_path(user.book) %></td>
+                        <td><%= @book.body %></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
