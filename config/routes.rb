@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   root to: 'homes#top'
   get 'top' => 'homes#top'
   get 'home/about' => 'homes#about'
-  resources :books
+  resources :books do
+    resource :likes, only: [:create, :destroy]
+  end
   resources :users
 end
