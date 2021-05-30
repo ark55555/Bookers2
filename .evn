@@ -1,0 +1,4 @@
+DB_USERNAME="bookers2"
+DB_PASSWORD="sql11111"
+DB_HOST="rds-mysql-bk2.c9u9nxl42igd.ap-northeast-1.rds.amazonaws.com"
+DB_DATABASE="Bookers2"
